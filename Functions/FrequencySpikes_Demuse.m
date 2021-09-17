@@ -183,8 +183,7 @@ for EP = 1:length(epochs)-1   % loop through the epochs
         x_500ms = xPol(After500ms);
         PoliFit_500ms =  PoliFunct(After500ms);
         
-        % assign each polynomial data final variable between 1.7Hz and 67Hz
-        % -AFTER 500ms of onset
+        % assign each polynomial data final variable between 1.7Hz and 67Hz -AFTER 500ms of onset
         PolynomialData_after500ms (x_500ms, MU) = PoliFit_500ms;          
         %% plot data  between 1.7Hz and 67Hz      
         plot_parameters_Demuse   %script for the plotting parameters
